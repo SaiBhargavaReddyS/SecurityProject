@@ -2,3 +2,8 @@ git status   - tells about any new files to commit
 git add .    - adds file to be commited
 git commit   -used to commit files
 git push origin master  -to push the files
+
+place to learn more
+https://www.pluralsight.com/guides/using-git-and-github-on-windows
+
+and stack overflow
