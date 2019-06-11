@@ -1,0 +1,4 @@
+git status   - tells about any new files to commit
+git add .    - adds file to be commited
+git commit   -used to commit files
+git push origin master  -to push the files
