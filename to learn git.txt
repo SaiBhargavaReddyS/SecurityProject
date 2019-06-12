@@ -5,5 +5,6 @@ git push origin master  -to push the files
 
 place to learn more
 https://www.pluralsight.com/guides/using-git-and-github-on-windows
-
+https://help.github.com/en/articles/changing-a-remotes-url
+https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
 and stack overflow
