@@ -5,22 +5,37 @@
         </title>
     </head>
     <body>
-        <form action="regis.php" method="POST">
+        <form action="regis.php" method="POST" id="the-form">
             <div>
-                <label>name :</label><input type="text" name="nme"></input>
+                <label>name :</label>
+                <input type="text" name="nme" data-validation="length alphanumeric" 
+                data-validation-length="3-12" 
+                data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)"></input>
             </div>
             <div>
                 <label>business :</label><input type="text" name="bus"></input>
             </div>
             <div>
-                <label>password :</label><input type="text" name="pwd"></input>
+                <label>password :</label><input type="password" name="pwd" data-validation="strength" 
+                data-validation-strength="2"></input>
             </div>
             <div>
-                <label>confirm password :</label><input type="text"></input>
+                <label>confirm password :</label><input type="password"></input>
             </div>
             <div>
                 <button type="submit" name="submit">submit</button> <button type="reset">reset</button>
             </div>
         </form>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <script>
+            $.validate({
+      modules : ' security'});
+  
+    // Restrict presentation length
+    $('#presentation').restrictLength( $('#pres-max-length') );
+  
+  </script>
+        
     </body>
 </html>

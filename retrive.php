@@ -1,6 +1,6 @@
 <?php
 require_once "connect.php";
-$sql="select * from regis_data";
+$sql="select * from regis3";
 $r=mysqli_query($conn,$sql);
     if(mysqli_num_rows($r)>0)
     {

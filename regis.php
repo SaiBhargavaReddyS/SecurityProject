@@ -1,9 +1,10 @@
 <?php 
 require_once "connect.php";
-$name=$_POST['nme'];
-$busi=$_POST['bus'];
-$pwd=$_POST['pwd'];
-$sql=" insert into regis_data (name,busi,pas)values('$name','$busi','$pwd')";
+require "Protect.php";
+$name=test_input($_POST['nme']);
+$busi=test_input($_POST['bus']);
+$pwd=test_input($_POST['pwd']);
+$sql=" insert into regis2 (name,busi,pas)values('$name','$busi','$pwd')";
 if(mysqli_query($conn,$sql))
 {
     mysqli_close($conn);
